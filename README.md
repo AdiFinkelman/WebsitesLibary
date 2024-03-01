@@ -29,7 +29,9 @@ WebsitesController websitesController = new WebsitesController(callBackWebsites)
  
 **Fetch Websites:** 
 Use the getWebsitesByCountryAndCategory method to request website data based on a specific country and category.
-javaCopy codewebsitesController.getWebsitesByCountryAndCategory("country", "category");
+```java
+websitesController.getWebsitesByCountryAndCategory("country", "category");
+```
 
 ### 2. WebsitesAPI
 WebsitesAPI defines the API endpoints used to interact with the server. It specifies the HTTP request methods and parameters required to fetch website data.
@@ -38,25 +40,19 @@ getWebsitesByCountryAndCategory(String country, String category): Fetches websit
 
 ### 3. WebsitesPerCategory
 WebsitesPerCategory represents an individual website within a specific category. It encapsulates website data attributes and provides methods for easy retrieval and manipulation.
-Usage
+Usage.
+
 **Create Instance:** Instantiate a WebsitesPerCategory object and set its URL attribute.
-javaCopy codeWebsitesPerCategory website = new WebsitesPerCategory();
+```java
+WebsitesPerCategory website = new WebsitesPerCategory();
 website.setUrl("https://example.com");
+```
 **Retrieve URL:** Get the URL of the website using the getUrl method.
-javaCopy codeString url = website.getUrl();
+```java
+String url = website.getUrl();
+```
 
-**Installation:**
-To use the My Websites Library in your Android project, follow these steps:
-Add the library to your project's dependencies.
-Ensure that your AndroidManifest.xml includes the necessary permissions, such as internet access.
-xmlCopy code<uses-permission android:name="android.permission.INTERNET" />
-Dependencies
-Retrofit: For making network requests.
-Gson: For JSON serialization/deserialization.
-Example
-Refer to the provided example code in the MainActivity and CategoriesActivity classes for a demonstration of how to integrate and utilize the My Websites Library in your Android application.
-
-## Using The Libary App
+## App for Using The Libary
 
 ## Features
 
@@ -90,9 +86,11 @@ Fetches websites data from the server using WebsitesController.
 Displays the fetched websites in a ListView using WebsiteAdapter.
 
 ## Dependencies
-Retrofit: For making network requests.
-Gson: For JSON serialization/deserialization.
-RecyclerView: For displaying lists efficiently.
+**Retrofit**: For making network requests.
+
+**Gson:** For JSON serialization/deserialization.
+
+**RecyclerView:** For displaying lists efficiently.
 
 ## Installation
 

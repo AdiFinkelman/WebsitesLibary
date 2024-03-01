@@ -24,7 +24,7 @@ WebsitesController.CallBack_Websites callBackWebsites = new WebsitesController.C
     }
 };
 WebsitesController websitesController = new WebsitesController(callBackWebsites);
-
+'''
  
 Fetch Websites: Use the getWebsitesByCountryAndCategory method to request website data based on a specific country and category.
 javaCopy codewebsitesController.getWebsitesByCountryAndCategory("country", "category");
